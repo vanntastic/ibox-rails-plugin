@@ -16,6 +16,8 @@ Link an ibox to a page to load via ajax
    link_to_ibox "View Page", :for => "my/special/page"
 Link to an ibox and specify the size (WxH), this defaults to :auto 
    link_to_ibox "View Page", :for => "my/special/image.jpg", :size => "300x300"
+Link to an inline element:
+   link_to_ibox "My Div", :for => "#my-div"
 OPTIONS :
     * content => the content of the link
     * :for => the content that you want to put in the ibox, it can be an image, page or inline content
