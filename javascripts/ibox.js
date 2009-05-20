@@ -236,6 +236,8 @@ showIbox = function(url,title,params) {
 			}
 			
 			http.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+			http.setRequestHeader("Accept","text/javascript");
+			http.setRequestHeader("X-Requested-With","XMLHttpRequest");
 			http.send(null);
 			break;
 		

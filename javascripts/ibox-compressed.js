@@ -23,7 +23,7 @@ else{ibox.style.height='280px';}
 if(params['width']){ibox.style.width=params['width']+'px';}
 else{ibox.style.width='450px';}
 ibox.style.display="";ibox.style.visibility="hidden";posToCenter(ibox);ibox.style.visibility="visible";getElem('ibox_content').style.overflow="auto";var response=http.responseText;setIBoxContent(response);}}
-http.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");http.send(null);break;default:}
+http.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");http.setRequestHeader("Accept","text/javascript");http.setRequestHeader("X-Requested-With","XMLHttpRequest");http.send(null);break;default:}
 ibox.style.opacity=0;ibox.style.filter='alpha(opacity=0)';var ibox_op_level=10;setIboxOpacity=setOpacity;for(var i=0;i<=ibox_op_level;i++){setTimeout("setIboxOpacity('ibox_wrapper',"+i+")",30*i);}
 if(ibox_type==2||ibox_type==3){ibox.onclick=null;getElem("ibox_close_a").onclick=function(){hideIbox();}}else{ibox.onclick=hideIbox;getElem("ibox_close_a").onclick=null;}
 return true;}
